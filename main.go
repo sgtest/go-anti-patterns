@@ -13,8 +13,20 @@ func outdatedReplace(s string) string {
 	return strings.Replace(s, "\\", "/", -1)
 }
 
+func stringsContains(s, sub string) bool {
+	return strings.Index(s, sub) != -1
+}
+
 func unusedRangeValue(s []string) {
 	for i, _ := range s {
 		fmt.Println(s[i])
 	}
+}
+
+func redundantTypeDeclaration(a string, b string) string {
+	return a + b
+}
+
+func expensiveStringComparasion(a, b string) bool {
+	return strings.ToLower(a) == strings.ToLower(b)
 }
