@@ -17,6 +17,10 @@ func outdatedReplace2(s string) string {
 	return strings.Replace(s, "\\", "/", -1)
 }
 
+func outdatedReplace3(s string) string {
+	return strings.Replace(s, "\\", "/", -1)
+}
+
 func stringsContains(s, sub string) bool {
 	return strings.Index(s, sub) != -1
 }
