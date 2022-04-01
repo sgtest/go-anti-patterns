@@ -10,11 +10,11 @@ func main() {
 }
 
 func outdatedReplace(s string) string {
-	return strings.Replace(s, "\\", "/", -1)
+	return strings.ReplaceAll(s, "\\", "/")
 }
 
 func outdatedReplace2(s string) string {
-	return strings.Replace(s, "\\", "/", -1)
+	return strings.ReplaceAll(s, "\\", "/")
 }
 
 func stringsContains(s, sub string) bool {
